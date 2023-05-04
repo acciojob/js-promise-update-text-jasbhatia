@@ -6,13 +6,13 @@ let promise = new Promise(function(resolve,reject){
 		resolve("Hello, world!");
 	},1000))
 
-	return promise;
-	
-}
-	
-	
-}
-
-abc().then(function(msg){
+   .then(function(msg){
 	document.getElementById("output").innerText="msg";
 })
+	
+}
+	
+	
+
+
+abc();
