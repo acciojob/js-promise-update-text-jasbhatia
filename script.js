@@ -7,7 +7,7 @@ let promise = new Promise(function(resolve,reject){
 	},1000))
 
    .then(function(msg){
-	document.getElementById("output").innerText="msg";
+	document.getElementById("output").innerText=msg;
 })
 	
 }
