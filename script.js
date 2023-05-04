@@ -14,5 +14,5 @@ let promise = new Promise(function(resolve,reject){
 }
 
 abc().then(function(msg){
-	document.getElementById("output").innerText=msg;
+	document.getElementById("output").innerText="msg";
 })
