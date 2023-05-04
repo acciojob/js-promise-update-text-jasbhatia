@@ -1,18 +1,19 @@
 //your JS code here. If required.
-function abc(){
-let promise = new Promise(function(resolve,reject){
+function a (){
+  const prom = new Promise((resolve,reject)=>{
+     setTimeout(function() {
+       resolve("Hello, world!")
+     }, 1000);
+  })
+  .then((res)=>{
+    const rend = document.getElementById('output');
+	rend.innerHTML = `${res}`
+  })
 
-	setTimeout(()=>{
-		resolve("Hello, world!");
-	},1000))
 
-   .then(function(msg){
-	document.getElementById("output").innerText=msg;
-})
-	
+
 }
-	
+a()
 	
 
 
-abc();
